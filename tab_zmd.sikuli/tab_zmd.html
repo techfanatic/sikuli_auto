@@ -92,14 +92,14 @@ sign = Pattern(<img src="1533613852474.png" />).exact()
 
 <span class="skw">click</span>(Pattern(<img src="1533706666690.png" />).exact())
 
-<span class="skw">sleep</span>(<span class="dig">3</span>)
+<span class="skw">sleep</span>(<span class="dig">15</span>)
 
-unfinish = Pattern(<img src="1533615372888.png" />).similar(<span class="dig">0.82</span>)
+unfinish = Pattern(<img src="1533615372888.png" />).exact()
 
 <span class="kw">for</span> i <span class="kw">in</span> findAll(unfinish):
 
     <span class="skw">click</span>(i)
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">sleep</span>(<span class="dig">5</span>)
 
     <span class="skw">click</span>(<img src="1533615450308.png" />)
 
@@ -108,24 +108,50 @@ unfinish = Pattern(<img src="1533615372888.png" />).similar(<span class="dig">0.
 
     <span class="skw">click</span>(<img src="1533613906973.png" />)
 
-    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">sleep</span>(<span class="dig">10</span>)
 
 
-bonus = Pattern(<img src="1533615499991.png" />).exact()
+
+bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93</span>)
+
+
+<span class="cmt">#bonus = Pattern("1533615499991.png").exact()</span>
 <span class="kw">if</span> exists(bonus):
     <span class="kw">print</span>(<span class="str">"find bonus"</span>)
     <span class="skw">click</span>(bonus)
+    <span class="skw">sleep</span>(<span class="dig">5</span>)
     <span class="skw">click</span>(<img src="1533615527529.png" />)
 
 
 
-<span class="skw">click</span>(<img src="1533615635276.png" />)
+<span class="skw">click</span>(unfinish)
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
 
 <span class="skw">click</span>(<img src="1533615650190.png" />)
+<span class="skw">sleep</span>(<span class="dig">10</span>)
+<span class="skw">click</span>(Pattern(<img src="1535097199163.png" />).similar(<span class="dig">0.94</span>))
+<span class="skw">sleep</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(Pattern(<img src="1533615718156.png" />).similar(<span class="dig">0.93</span>))
 
-<span class="skw">click</span>(<img src="1533876315912.png" />)
+<span class="skw">sleep</span>(<span class="dig">5</span>)
 
-<span class="skw">click</span>(<img src="1533615718156.png" />)
+<span class="skw">click</span>(<img src="1535097385646.png" />)
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="skw">click</span>(<img src="1535097417157.png" />)
+<span class="skw">sleep</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="1535097438222.png" />)
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+
+<span class="skw">click</span>(<img src="1533613906973.png" />)
+
+<span class="skw">sleep</span>(<span class="dig">10</span>)
+
+<span class="skw">click</span>(bonus)
 </pre>
 </body>
 </html>
