@@ -4,7 +4,7 @@ type("l", KeyModifier.CTRL) # press lowercase L + CTRL
 type("vip.jd.com\n")
 type(Key.ENTER)
 type("\n")
-wait(6)
+wait(10)
 
 dir = getBundlePath()
 reg = Region(1358,383,466,371)

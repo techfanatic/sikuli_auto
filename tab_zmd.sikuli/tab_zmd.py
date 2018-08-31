@@ -5,7 +5,10 @@ sleep(5)
 click("1533613772075.png")
 sleep(2)
 
-#click("1533613833999.png")
+splash = Pattern("1535689420965.png").exact()
+if exists(splash):
+    click(splash)
+    
 sign = Pattern("1533613852474.png").exact()
 
 if exists(sign):
@@ -48,7 +51,7 @@ if exists(bonus):
     print("find bonus")
     click(bonus) 
     sleep(5)
-    click("1533615527529.png")
+    click(Pattern("1533615527529.png").similar(0.96))
 
 
 
@@ -58,11 +61,11 @@ sleep(2)
 
 click("1533615650190.png")
 sleep(10)
-click(Pattern("1535097199163.png").similar(0.94))
+click(Pattern("1535097199163.png").similar(0.89))
 sleep(3)
 click(Pattern("1533615718156.png").similar(0.93))
 
-sleep(5)
+sleep(20)
 
 click("1535097385646.png")
 
