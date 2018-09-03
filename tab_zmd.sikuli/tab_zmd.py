@@ -17,7 +17,7 @@ if exists(sign):
     sleep(2)
     click("1533706148466.png")
     
-    sleep(1)
+    sleep(10)
 
     click("1533706172680.png")
 
@@ -25,8 +25,8 @@ click(Pattern("1533706666690.png").exact())
 
 sleep(15)
 
-unfinish = Pattern("1533615372888.png").exact()
-
+unfinish = Pattern("1533615372888.png").similar(0.93)
+bonus = Pattern("1535096171127.png").similar(0.93)
 for i in findAll(unfinish):
     
     click(i)
@@ -36,18 +36,19 @@ for i in findAll(unfinish):
 
     sleep(2)
 
-
-    click("1533613906973.png")
-
+    if not exists(bonus):
+        click("1533613906973.png")
+    if exists("1535948744547.png"):
+        click("1533613906973.png")
     sleep(10)
 
 
 
-bonus = Pattern("1535096171127.png").similar(0.93)
+
 
 
 #bonus = Pattern("1533615499991.png").exact()
-if exists(bonus):
+for i in findAll(bonus):
     print("find bonus")
     click(bonus) 
     sleep(5)
