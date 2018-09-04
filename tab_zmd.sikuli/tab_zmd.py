@@ -53,10 +53,11 @@ for i in findAll(bonus):
     click(bonus) 
     sleep(5)
     click(Pattern("1533615527529.png").similar(0.96))
+    sleep(5)
 
 
 
-click(unfinish)
+click(Pattern("1536034554876.png").similar(0.96))
 
 sleep(2)
 
@@ -70,13 +71,13 @@ sleep(20)
 
 click("1535097385646.png")
 
-sleep(2)
+sleep(5)
 
 click("1535097417157.png")
-sleep(1)
+sleep(5)
 click("1535097438222.png")
 
-sleep(2)
+sleep(10)
 
 
 click("1533613906973.png")
