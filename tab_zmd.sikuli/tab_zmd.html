@@ -81,7 +81,7 @@ splash = Pattern(<img src="1535689420965.png" />).exact()
 <span class="kw">if</span> exists(splash):
     <span class="skw">click</span>(splash)
 
-sign = Pattern(<img src="1533613852474.png" />).exact()
+sign = Pattern(<img src="1533613852474.png" />).similar(<span class="dig">0.94</span>)
 
 <span class="kw">if</span> exists(sign):
     <span class="kw">print</span>(<span class="str">"find sign"</span>)
@@ -93,7 +93,7 @@ sign = Pattern(<img src="1533613852474.png" />).exact()
 
     <span class="skw">click</span>(<img src="1533706172680.png" />)
 
-<span class="skw">click</span>(Pattern(<img src="1533706666690.png" />).exact())
+<span class="skw">click</span>(Pattern(<img src="1533706666690.png" />).similar(<span class="dig">0.93</span>))
 
 <span class="skw">sleep</span>(<span class="dig">15</span>)
 
@@ -108,7 +108,7 @@ bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93<
 
     <span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="kw">if</span> <span class="kw">not</span> exists(bonus):
+    <span class="kw">if</span> <span class="kw">not</span> exists(unfinish):
         <span class="skw">click</span>(<img src="1533613906973.png" />)
     <span class="kw">if</span> exists(<img src="1535948744547.png" />):
         <span class="skw">click</span>(<img src="1533613906973.png" />)

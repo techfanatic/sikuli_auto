@@ -9,7 +9,7 @@ splash = Pattern("1535689420965.png").exact()
 if exists(splash):
     click(splash)
     
-sign = Pattern("1533613852474.png").exact()
+sign = Pattern("1533613852474.png").similar(0.94)
 
 if exists(sign):
     print("find sign")
@@ -21,7 +21,7 @@ if exists(sign):
 
     click("1533706172680.png")
 
-click(Pattern("1533706666690.png").exact())
+click(Pattern("1533706666690.png").similar(0.93))
 
 sleep(15)
 
@@ -36,7 +36,7 @@ for i in findAll(unfinish):
 
     sleep(2)
 
-    if not exists(bonus):
+    if not exists(unfinish):
         click("1533613906973.png")
     if exists("1535948744547.png"):
         click("1533613906973.png")
