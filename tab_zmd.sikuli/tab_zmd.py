@@ -19,6 +19,10 @@ if exists(sign):
     
     sleep(10)
 
+    if exists("1536294368703.png"):
+        click("1536294395821.png")
+    sleep(5)
+
     click("1533706172680.png")
 
 click(Pattern("1533706666690.png").similar(0.93))
