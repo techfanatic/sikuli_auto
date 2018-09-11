@@ -74,7 +74,7 @@
 <span class="skw">click</span>(<img src="1533613746548.png" />)
 <span class="skw">sleep</span>(<span class="dig">5</span>)
 
-<span class="skw">click</span>(<img src="1533613772075.png" />)
+<span class="skw">click</span>(Pattern(<img src="1533613772075.png" />).similar(<span class="dig">0.83</span>))
 <span class="skw">sleep</span>(<span class="dig">2</span>)
 
 splash = Pattern(<img src="1535689420965.png" />).exact()
@@ -91,7 +91,7 @@ sign = Pattern(<img src="1533613852474.png" />).similar(<span class="dig">0.94</
 
     <span class="skw">sleep</span>(<span class="dig">10</span>)
 
-    <span class="kw">if</span> exists(<img src="1536294368703.png" />):
+    <span class="kw">if</span> exists(Pattern(<img src="1536294368703.png" />).similar(<span class="dig">0.94</span>)):
         <span class="skw">click</span>(<img src="1536294395821.png" />)
     <span class="skw">sleep</span>(<span class="dig">5</span>)
 
@@ -139,7 +139,7 @@ bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93<
 
 <span class="skw">click</span>(<img src="1533615650190.png" />)
 <span class="skw">sleep</span>(<span class="dig">10</span>)
-<span class="skw">click</span>(Pattern(<img src="1535097199163.png" />).similar(<span class="dig">0.89</span>))
+<span class="skw">click</span>(Pattern(<img src="1535097199163.png" />).similar(<span class="dig">0.78</span>))
 <span class="skw">sleep</span>(<span class="dig">3</span>)
 <span class="skw">click</span>(Pattern(<img src="1533615718156.png" />).similar(<span class="dig">0.93</span>))
 
@@ -154,7 +154,6 @@ bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93<
 <span class="skw">click</span>(<img src="1535097438222.png" />)
 
 <span class="skw">sleep</span>(<span class="dig">10</span>)
-
 
 <span class="skw">click</span>(<img src="1533613906973.png" />)
 

@@ -2,7 +2,7 @@
 click("1533613746548.png")
 sleep(5)
 
-click("1533613772075.png")
+click(Pattern("1533613772075.png").similar(0.83))
 sleep(2)
 
 splash = Pattern("1535689420965.png").exact()
@@ -19,7 +19,7 @@ if exists(sign):
     
     sleep(10)
 
-    if exists("1536294368703.png"):
+    if exists(Pattern("1536294368703.png").similar(0.94)):
         click("1536294395821.png")
     sleep(5)
 
@@ -67,7 +67,7 @@ sleep(2)
 
 click("1533615650190.png")
 sleep(10)
-click(Pattern("1535097199163.png").similar(0.89))
+click(Pattern("1535097199163.png").similar(0.78))
 sleep(3)
 click(Pattern("1533615718156.png").similar(0.93))
 
@@ -83,12 +83,13 @@ click("1535097438222.png")
 
 sleep(10)
 
-
 click("1533613906973.png")
 
 sleep(10)
 
 click(bonus) 
+
+
 
  
 
