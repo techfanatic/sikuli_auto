@@ -70,9 +70,9 @@
 <h2>elema.sikuli</h2> <a href="elema.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="skw">click</span>(<img src="1536298774829.png" />)
+<span class="skw">click</span>(<img src="1536727761716.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+<span class="skw">sleep</span>(<span class="dig">10</span>)
 
 <span class="skw">click</span>(<img src="1536298819141.png" />)
 
@@ -86,9 +86,26 @@ count = <span class="dig">400</span>
 
 butt = <img src="1536299482112.png" />
 
-wheel(butt, WHEEL_DOWN, <span class="dig">3</span>)
+<span class="kw">if</span> exists(butt):
+    <span class="skw">click</span>(butt)
 
-bonus = Pattern(<img src="bonus.png" />).targetOffset(<span class="dig">152</span>,<span class="dig">0</span>)
+    <span class="skw">sleep</span>(<span class="dig">3</span>)
+    <span class="kw">if</span> exists(<img src="1536728302365.png" />):
+        <span class="skw">click</span>(<img src="1536728312022.png" />)
+
+
+    <span class="kw">else</span>:
+        <span class="skw">click</span>(<img src="1536727946502.png" />)
+
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+
+        <span class="skw">click</span>(<img src="1536727975992.png" />)
+
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+
+wheel(butt, WHEEL_DOWN, <span class="dig">5</span>)
+
+bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.83</span>).targetOffset(<span class="dig">133</span>,-<span class="dig">2</span>)
 
 <span class="kw">while</span> count:
     <span class="kw">if</span> exists(bonus):

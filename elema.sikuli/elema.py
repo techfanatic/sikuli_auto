@@ -1,6 +1,6 @@
-click("1536298774829.png")
+click("1536727761716.png")
 
-sleep(5)
+sleep(10)
 
 click("1536298819141.png")
 
@@ -14,9 +14,26 @@ count = 400
 
 butt = "1536299482112.png"
 
-wheel(butt, WHEEL_DOWN, 3)
+if exists(butt):
+    click(butt)
+    
+    sleep(3)
+    if exists("1536728302365.png"):
+        click("1536728312022.png")
 
-bonus = Pattern("bonus.png").targetOffset(152,0)
+        
+    else: 
+        click("1536727946502.png")
+
+        sleep(2)
+
+        click("1536727975992.png")
+
+        sleep(2)
+
+wheel(butt, WHEEL_DOWN, 5)
+
+bonus = Pattern("bonus.png").similar(0.83).targetOffset(133,-2)
 
 while count:
     if exists(bonus):
