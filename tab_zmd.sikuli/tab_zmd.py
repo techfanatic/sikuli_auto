@@ -89,7 +89,26 @@ sleep(10)
 
 click(bonus) 
 
+click(Pattern("1533615527529.png").similar(0.96))
 
+click("1536727067521.png")
+
+sleep(1)
+
+click("1536727093763.png")
+
+sleep(5)
+
+click("1536727151029.png")
+
+sleep(10)
+
+click("1536727189343.png")
+
+sleep(2)
+click(bonus) 
+
+click(Pattern("1533615527529.png").similar(0.96))
 
  
 

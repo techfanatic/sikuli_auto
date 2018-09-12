@@ -1,4 +1,8 @@
-loop = 30
+click("1536727287754.png")
+
+sleep(5)
+
+loop = 50
 
 while loop:
 
