@@ -2,6 +2,8 @@
 click("1533613746548.png")
 sleep(5)
 
+if exists(Pattern("1536814622496.png").similar(0.85)):
+    click(Pattern("1536814622496.png").similar(0.85))
 click(Pattern("1533613772075.png").similar(0.83))
 sleep(2)
 
@@ -21,6 +23,9 @@ if exists(sign):
 
     if exists(Pattern("1536294368703.png").similar(0.94)):
         click("1536294395821.png")
+        sleep(2)
+        click(Pattern("1533615527529.png").similar(0.96))
+        
     sleep(5)
 
     click("1533706172680.png")
