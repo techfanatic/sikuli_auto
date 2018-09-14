@@ -16,22 +16,25 @@ butt = "1536299482112.png"
 
 if exists(butt):
     click(butt)
-    
+  
+        
     sleep(3)
     if exists("1536728302365.png"):
         click("1536728312022.png")
 
         
     else: 
-        click("1536727946502.png")
+        if exists("1536727946502.png"):
+            click("1536727946502.png")
 
         sleep(2)
 
-        click("1536727975992.png")
+        if exists("1536727975992.png"):
+            click("1536727975992.png")
 
         sleep(2)
 
-wheel(butt, WHEEL_DOWN, 5)
+wheel("1536899668334.png", WHEEL_DOWN, 5)
 
 bonus = Pattern("bonus.png").similar(0.83).targetOffset(133,-2)
 

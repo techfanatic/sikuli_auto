@@ -4,6 +4,7 @@ sleep(5)
 
 sign = "sign.png"
 
+sleep(5)
 if exists(sign):
     click(sign)
     sleep(2)

@@ -89,21 +89,24 @@ butt = <img src="1536299482112.png" />
 <span class="kw">if</span> exists(butt):
     <span class="skw">click</span>(butt)
 
+
     <span class="skw">sleep</span>(<span class="dig">3</span>)
     <span class="kw">if</span> exists(<img src="1536728302365.png" />):
         <span class="skw">click</span>(<img src="1536728312022.png" />)
 
 
     <span class="kw">else</span>:
-        <span class="skw">click</span>(<img src="1536727946502.png" />)
+        <span class="kw">if</span> exists(<img src="1536727946502.png" />):
+            <span class="skw">click</span>(<img src="1536727946502.png" />)
 
         <span class="skw">sleep</span>(<span class="dig">2</span>)
 
-        <span class="skw">click</span>(<img src="1536727975992.png" />)
+        <span class="kw">if</span> exists(<img src="1536727975992.png" />):
+            <span class="skw">click</span>(<img src="1536727975992.png" />)
 
         <span class="skw">sleep</span>(<span class="dig">2</span>)
 
-wheel(butt, WHEEL_DOWN, <span class="dig">5</span>)
+wheel(<img src="1536899668334.png" />, WHEEL_DOWN, <span class="dig">5</span>)
 
 bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.83</span>).targetOffset(<span class="dig">133</span>,-<span class="dig">2</span>)
 

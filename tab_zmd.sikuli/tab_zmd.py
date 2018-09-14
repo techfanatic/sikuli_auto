@@ -100,7 +100,7 @@ click("1536727067521.png")
 
 sleep(1)
 
-click("1536727093763.png")
+click(Pattern("1536727093763.png").similar(0.81))
 
 sleep(5)
 
