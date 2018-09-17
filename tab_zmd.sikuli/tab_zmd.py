@@ -1,5 +1,5 @@
 #test
-click("1533613746548.png")
+click("1537158539534.png")
 sleep(5)
 
 if exists(Pattern("1536814622496.png").similar(0.85)):
@@ -30,7 +30,7 @@ if exists(sign):
 
     click("1533706172680.png")
 
-click(Pattern("1533706666690.png").similar(0.93))
+click(Pattern("1533706666690.png").similar(0.86))
 
 sleep(15)
 
@@ -41,7 +41,8 @@ for i in findAll(unfinish):
     click(i)
     sleep(5)
 
-    click("1533615450308.png")
+    if exists(Pattern("1533615450308.png").similar(0.96)):
+        click(Pattern("1533615450308.png").similar(0.96))
 
     sleep(2)
 
@@ -49,6 +50,9 @@ for i in findAll(unfinish):
         click("1533613906973.png")
     if exists("1535948744547.png"):
         click("1533613906973.png")
+
+    if exists(Pattern("1537159170533.png").similar(0.75)):
+        click(Pattern("1537159202343.png").similar(0.84).targetOffset(78,-70))
     sleep(10)
 
 

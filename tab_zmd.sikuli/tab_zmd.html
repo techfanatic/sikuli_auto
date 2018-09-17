@@ -71,7 +71,7 @@
 </div>
 <pre class="sikuli-code">
 <span class="cmt">#test</span>
-<span class="skw">click</span>(<img src="1533613746548.png" />)
+<span class="skw">click</span>(<img src="1537158539534.png" />)
 <span class="skw">sleep</span>(<span class="dig">5</span>)
 
 <span class="kw">if</span> exists(Pattern(<img src="1536814622496.png" />).similar(<span class="dig">0.85</span>)):
@@ -102,7 +102,7 @@ sign = Pattern(<img src="1533613852474.png" />).similar(<span class="dig">0.94</
 
     <span class="skw">click</span>(<img src="1533706172680.png" />)
 
-<span class="skw">click</span>(Pattern(<img src="1533706666690.png" />).similar(<span class="dig">0.93</span>))
+<span class="skw">click</span>(Pattern(<img src="1533706666690.png" />).similar(<span class="dig">0.86</span>))
 
 <span class="skw">sleep</span>(<span class="dig">15</span>)
 
@@ -113,7 +113,8 @@ bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93<
     <span class="skw">click</span>(i)
     <span class="skw">sleep</span>(<span class="dig">5</span>)
 
-    <span class="skw">click</span>(<img src="1533615450308.png" />)
+    <span class="kw">if</span> exists(Pattern(<img src="1533615450308.png" />).similar(<span class="dig">0.96</span>)):
+        <span class="skw">click</span>(Pattern(<img src="1533615450308.png" />).similar(<span class="dig">0.96</span>))
 
     <span class="skw">sleep</span>(<span class="dig">2</span>)
 
@@ -121,6 +122,9 @@ bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93<
         <span class="skw">click</span>(<img src="1533613906973.png" />)
     <span class="kw">if</span> exists(<img src="1535948744547.png" />):
         <span class="skw">click</span>(<img src="1533613906973.png" />)
+
+    <span class="kw">if</span> exists(Pattern(<img src="1537159170533.png" />).similar(<span class="dig">0.75</span>)):
+        <span class="skw">click</span>(Pattern(<img src="1537159202343.png" />).similar(<span class="dig">0.84</span>).targetOffset(<span class="dig">78</span>,-<span class="dig">70</span>))
     <span class="skw">sleep</span>(<span class="dig">10</span>)
 
 
