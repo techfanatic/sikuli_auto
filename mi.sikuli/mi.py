@@ -8,7 +8,8 @@ while loop:
 
     click("1536305950350.png")
     sleep(2)
-    click("1536553396652.png")
+    if exists("1536553396652.png"):
+        click("1536553396652.png")
 
     sleep(2)
 
@@ -22,6 +23,12 @@ while loop:
 
     click("1536815193771.png")
     sleep(2)
-    
+
+    click("1537158340940.png")
+    sleep(2)
+
+    click("1537158356808.png")
+
+    sleep(2)
 
     loop = loop - 1
