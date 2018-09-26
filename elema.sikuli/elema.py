@@ -27,12 +27,14 @@ if exists(butt):
         if exists("1536727946502.png"):
             click("1536727946502.png")
 
-        sleep(2)
+            sleep(2)
 
-        if exists("1536727975992.png"):
-            click("1536727975992.png")
+            click("1537938034477.png")
 
-        sleep(2)
+            sleep(2)       
+            click("1536298862210.png")
+        
+sleep(1)
 
 wheel("1536899668334.png", WHEEL_DOWN, 5)
 
