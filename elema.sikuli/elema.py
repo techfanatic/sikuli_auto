@@ -1,4 +1,4 @@
-click("1536727761716.png")
+click("1540792082363.png")
 
 sleep(10)
 
@@ -6,7 +6,10 @@ click("1536298819141.png")
 
 sleep(3)
 
-click("1536298862210.png")
+if exists("1540791906070.png"):
+    click("1540791920457.png")
+
+click("1540792031876.png")
 
 sleep(5)
 

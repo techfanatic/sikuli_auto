@@ -71,7 +71,7 @@
 </div>
 <pre class="sikuli-code">
 <span class="cmt">#test</span>
-<span class="skw">click</span>(<img src="1537158539534.png" />)
+<span class="skw">click</span>(<img src="1540790334473.png" />)
 <span class="skw">sleep</span>(<span class="dig">5</span>)
 
 <span class="kw">if</span> exists(Pattern(<img src="1536814622496.png" />).similar(<span class="dig">0.85</span>)):
@@ -83,13 +83,13 @@ splash = Pattern(<img src="1535689420965.png" />).exact()
 <span class="kw">if</span> exists(splash):
     <span class="skw">click</span>(splash)
 
-sign = Pattern(<img src="1533613852474.png" />).similar(<span class="dig">0.94</span>)
+sign = <img src="sign.png" />
 
 <span class="kw">if</span> exists(sign):
     <span class="kw">print</span>(<span class="str">"find sign"</span>)
     <span class="skw">click</span>(sign)
     <span class="skw">sleep</span>(<span class="dig">2</span>)
-    <span class="skw">click</span>(<img src="1533706148466.png" />)
+    <span class="cmt">#click("1540790486766.png")</span>
 
     <span class="skw">sleep</span>(<span class="dig">10</span>)
 
@@ -98,16 +98,20 @@ sign = Pattern(<img src="1533613852474.png" />).similar(<span class="dig">0.94</
         <span class="skw">sleep</span>(<span class="dig">2</span>)
         <span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.96</span>))
 
-    <span class="skw">sleep</span>(<span class="dig">5</span>)
+    <span class="cmt">#sleep(5)</span>
 
-    <span class="skw">click</span>(<img src="1533706172680.png" />)
+    <span class="cmt">#click("1533706172680.png")</span>
 
-<span class="skw">click</span>(Pattern(<img src="1533706666690.png" />).similar(<span class="dig">0.86</span>))
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="cmt">#click("1540791155024.png")</span>
+
+wheel(<img src="1540790610381.png" />, WHEEL_DOWN, <span class="dig">8</span>)
 
 <span class="skw">sleep</span>(<span class="dig">15</span>)
 
 unfinish = Pattern(<img src="1533615372888.png" />).similar(<span class="dig">0.93</span>)
-bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93</span>)
+bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.86</span>)
 <span class="kw">for</span> i <span class="kw">in</span> findAll(unfinish):
 
     <span class="skw">click</span>(i)
@@ -128,16 +132,11 @@ bonus = Pattern(<img src="1535096171127.png" />).similar(<span class="dig">0.93<
     <span class="skw">sleep</span>(<span class="dig">10</span>)
 
 
-
-
-
-
-<span class="cmt">#bonus = Pattern("1533615499991.png").exact()</span>
 <span class="kw">for</span> i <span class="kw">in</span> findAll(bonus):
     <span class="kw">print</span>(<span class="str">"find bonus"</span>)
     <span class="skw">click</span>(bonus)
     <span class="skw">sleep</span>(<span class="dig">5</span>)
-    <span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.96</span>))
+    <span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.94</span>))
     <span class="skw">sleep</span>(<span class="dig">5</span>)
 
 
