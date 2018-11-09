@@ -81,19 +81,21 @@
 <span class="kw">if</span> exists(<img src="1540791906070.png" />):
     <span class="skw">click</span>(<img src="1540791920457.png" />)
 
-<span class="skw">click</span>(<img src="1540792031876.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+<span class="skw">sleep</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(<img src="1541134556132.png" />)
+
+<span class="skw">sleep</span>(<span class="dig">8</span>)
 
 count = <span class="dig">400</span>
 
-butt = <img src="1536299482112.png" />
+butt = <img src="butt.png" />
 
 <span class="kw">if</span> exists(butt):
     <span class="skw">click</span>(butt)
 
 
-    <span class="skw">sleep</span>(<span class="dig">3</span>)
+    <span class="skw">sleep</span>(<span class="dig">5</span>)
     <span class="kw">if</span> exists(<img src="1536728302365.png" />):
         <span class="skw">click</span>(<img src="1536728312022.png" />)
 
@@ -106,14 +108,14 @@ butt = <img src="1536299482112.png" />
 
             <span class="skw">click</span>(<img src="1537938034477.png" />)
 
-            <span class="skw">sleep</span>(<span class="dig">2</span>)
-            <span class="skw">click</span>(<img src="1536298862210.png" />)
+            <span class="skw">sleep</span>(<span class="dig">5</span>)
+            <span class="skw">click</span>(Pattern(<img src="1536298862210.png" />).targetOffset(-<span class="dig">38</span>,-<span class="dig">11</span>))
 
 <span class="skw">sleep</span>(<span class="dig">1</span>)
 
 wheel(<img src="1536899668334.png" />, WHEEL_DOWN, <span class="dig">5</span>)
 
-bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.83</span>).targetOffset(<span class="dig">133</span>,-<span class="dig">2</span>)
+bonus = Pattern(<img src="bonus.png" />).targetOffset(<span class="dig">141</span>,-<span class="dig">7</span>)
 
 <span class="kw">while</span> count:
     <span class="kw">if</span> exists(bonus):

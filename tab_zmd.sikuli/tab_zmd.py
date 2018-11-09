@@ -16,8 +16,9 @@ sign = "sign.png"
 if exists(sign):
     print("find sign")
     click(sign)
-    sleep(2)
-    #click("1540790486766.png")
+    sleep(5)
+    if exists("1541135091392.png"):
+        click("1541135091392.png")
     
     sleep(10)
 
@@ -45,9 +46,11 @@ for i in findAll(unfinish):
     click(i)
     sleep(5)
 
-    if exists(Pattern("1533615450308.png").similar(0.96)):
-        click(Pattern("1533615450308.png").similar(0.96))
+    if exists(Pattern("1541477041150.png").similar(0.84)):
+        click(Pattern("1541477041150.png").similar(0.83))
 
+    if exists(Pattern("1541477156477.png").similar(0.90)):
+        click(Pattern("1541477156477.png").similar(0.90))
     sleep(2)
 
     if not exists(unfinish):
@@ -57,7 +60,7 @@ for i in findAll(unfinish):
 
     if exists(Pattern("1537159170533.png").similar(0.75)):
         click(Pattern("1537159202343.png").similar(0.84).targetOffset(78,-70))
-    sleep(10)
+    sleep(5)
 
 
 for i in findAll(bonus):
@@ -67,7 +70,21 @@ for i in findAll(bonus):
     click(Pattern("1533615527529.png").similar(0.94))
     sleep(5)
 
+click(Pattern("1541392715783.png").similar(0.88).targetOffset(205,-3))
 
+sleep(1)
+
+click(Pattern("1536727093763.png").similar(0.81))
+
+sleep(5)
+
+click("1536727151029.png")
+
+sleep(5)
+
+click("1536727189343.png")
+
+sleep(5)
 
 click(Pattern("1536034554876.png").similar(0.96))
 
@@ -75,9 +92,9 @@ sleep(2)
 
 click("1533615650190.png")
 sleep(10)
-click(Pattern("1535097199163.png").similar(0.78))
+click("1541136703643.png")
 sleep(3)
-click(Pattern("1533615718156.png").similar(0.93))
+click(Pattern("1533615718156.png").similar(0.72))
 
 sleep(20)
 
@@ -99,15 +116,7 @@ click(bonus)
 
 click(Pattern("1533615527529.png").similar(0.96))
 
-click("1536727067521.png")
 
-sleep(1)
-
-click(Pattern("1536727093763.png").similar(0.81))
-
-sleep(5)
-
-click("1536727151029.png")
 
 sleep(10)
 

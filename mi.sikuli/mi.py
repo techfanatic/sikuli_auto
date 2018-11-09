@@ -1,6 +1,10 @@
-click("1540790193826.png")
+click("1541134059508.png")
 
 sleep(5)
+
+click("1541134126314.png")
+
+sleep(15)
 
 loop = 50
 
