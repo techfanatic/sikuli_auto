@@ -13,7 +13,7 @@ reg = Region(1358,383,466,371)
 
 login1 = "1532497254047.png"
 login2 = "1532497274762.png"
-
+sleep(10)
 signbtn = "1532408245132.png"
 
 confirm = "confirm.png"

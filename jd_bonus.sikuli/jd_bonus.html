@@ -67,19 +67,34 @@
    </head>
 <body>
 <div class="info">
-<h2>bird.sikuli</h2> <a href="bird.zip">(Download this script)</a>
+<h2>jd_bonus.sikuli</h2> <a href="jd_bonus.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="skw">click</span>(<img src="1542448155702.png" />)
+lable=<img src="1543404518074.png" />
 
-<span class="skw">sleep</span>(<span class="dig">3</span>)
+<span class="kw">while</span> exists(lable):
+    <span class="skw">click</span>(lable)
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="kw">if</span> exists(<img src="1543404675939.png" />):
+        <span class="skw">click</span>(<img src="1543404675939.png" />)
 
-<span class="skw">click</span>(<img src="1536727640132.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">3</span>)
 
-<span class="skw">click</span>(<img src="1536815301425.png" />)
-<span class="skw">sleep</span>(<span class="dig">3</span>)
+    <span class="cmt">#if exists("1543404693002.png"):</span>
+    <span class="cmt">#    click("1543404706114.png")</span>
+
+    <span class="kw">if</span> exists(<img src="1544071102095.png" />):
+        <span class="skw">click</span>(<img src="1544071102095.png" />)
+        <span class="skw">wait</span>(<img src="1544071456316.png" />)
+        <span class="skw">click</span>(<img src="1544071456316.png" />)
+        <span class="skw">wait</span>(<img src="1544071496611.png" />)
+        <span class="skw">click</span>(<img src="1544071496611.png" />)
+
+
+    <span class="kw">if</span> exists(<img src="1544071139854.png" />):
+        <span class="skw">click</span>(<img src="1544071152177.png" />)
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1544071696172.png" />)
 </pre>
 </body>
 </html>

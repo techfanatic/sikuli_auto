@@ -19,13 +19,14 @@ if exists(sign):
     sleep(5)
     if exists("1541135091392.png"):
         click("1541135091392.png")
-    
+    if exists("1542449267862.png"):
+        click("1542449280018.png")
     sleep(10)
 
     if exists(Pattern("1536294368703.png").similar(0.94)):
         click("1536294395821.png")
         sleep(2)
-        click(Pattern("1533615527529.png").similar(0.96))
+        click(Pattern("1533615527529.png").similar(0.94))
         
     #sleep(5)
 
@@ -44,7 +45,7 @@ bonus = Pattern("bonus.png").similar(0.86)
 for i in findAll(unfinish):
     
     click(i)
-    sleep(5)
+    sleep(2)
 
     if exists(Pattern("1541477041150.png").similar(0.84)):
         click(Pattern("1541477041150.png").similar(0.83))
@@ -53,24 +54,25 @@ for i in findAll(unfinish):
         click(Pattern("1541477156477.png").similar(0.90))
     sleep(2)
 
-    if not exists(unfinish):
+    if exists("1544072549930.png"):
         click("1533613906973.png")
     if exists("1535948744547.png"):
         click("1533613906973.png")
-
+    if exists(Pattern("1543403911200.png").similar(0.83)):
+        click("1543403924500.png")
     if exists(Pattern("1537159170533.png").similar(0.75)):
         click(Pattern("1537159202343.png").similar(0.84).targetOffset(78,-70))
-    sleep(5)
+    sleep(2)
 
 
 for i in findAll(bonus):
     print("find bonus")
     click(bonus) 
-    sleep(5)
+    sleep(2)
     click(Pattern("1533615527529.png").similar(0.94))
-    sleep(5)
+    sleep(2)
 
-click(Pattern("1541392715783.png").similar(0.88).targetOffset(205,-3))
+click("1544072801586.png")
 
 sleep(1)
 
@@ -86,7 +88,7 @@ click("1536727189343.png")
 
 sleep(5)
 
-click(Pattern("1536034554876.png").similar(0.96))
+click("1544072859975.png")
 
 sleep(2)
 
@@ -97,7 +99,7 @@ sleep(3)
 click(Pattern("1533615718156.png").similar(0.72))
 
 sleep(20)
-
+wait("1535097385646.png")
 click("1535097385646.png")
 
 sleep(5)
@@ -127,7 +129,9 @@ click(bonus)
 
 click(Pattern("1533615527529.png").similar(0.96))
 
- 
+click(bonus)
+
+click(Pattern("1533615527529.png").similar(0.96))
 
 
 

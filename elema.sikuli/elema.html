@@ -70,7 +70,7 @@
 <h2>elema.sikuli</h2> <a href="elema.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="skw">click</span>(<img src="1540792082363.png" />)
+<span class="skw">click</span>(<img src="1543981552556.png" />)
 
 <span class="skw">sleep</span>(<span class="dig">10</span>)
 
@@ -78,50 +78,53 @@
 
 <span class="skw">sleep</span>(<span class="dig">3</span>)
 
+<span class="kw">if</span> exists(<img src="1542547047842.png" />):
+    <span class="skw">click</span>(<img src="1542547061688.png" />)
+
 <span class="kw">if</span> exists(<img src="1540791906070.png" />):
     <span class="skw">click</span>(<img src="1540791920457.png" />)
 
 
-<span class="skw">sleep</span>(<span class="dig">3</span>)
-<span class="skw">click</span>(<img src="1541134556132.png" />)
 
+
+<span class="skw">sleep</span>(<span class="dig">3</span>)
+bonus=<img src="1541134556132.png" />
+<span class="skw">click</span>(bonus)
 <span class="skw">sleep</span>(<span class="dig">8</span>)
 
 count = <span class="dig">400</span>
 
-butt = <img src="butt.png" />
+butt =
 
 <span class="kw">if</span> exists(butt):
     <span class="skw">click</span>(butt)
 
 
     <span class="skw">sleep</span>(<span class="dig">5</span>)
-    <span class="kw">if</span> exists(<img src="1536728302365.png" />):
-        <span class="skw">click</span>(<img src="1536728312022.png" />)
+    <span class="kw">print</span>(<span class="str">"after click the button"</span>)
 
+    <span class="kw">if</span> exists(<img src="1544072130030.png" />:
+        <span class="skw">click</span>(<img src="1544072130030.png" />)
 
-    <span class="kw">else</span>:
-        <span class="kw">if</span> exists(<img src="1536727946502.png" />):
-            <span class="skw">click</span>(<img src="1536727946502.png" />)
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
 
-            <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1537938034477.png" />)
 
-            <span class="skw">click</span>(<img src="1537938034477.png" />)
-
-            <span class="skw">sleep</span>(<span class="dig">5</span>)
-            <span class="skw">click</span>(Pattern(<img src="1536298862210.png" />).targetOffset(-<span class="dig">38</span>,-<span class="dig">11</span>))
+    <span class="skw">sleep</span>(<span class="dig">5</span>)
+    <span class="skw">click</span>(bonus)
 
 <span class="skw">sleep</span>(<span class="dig">1</span>)
 
-wheel(<img src="1536899668334.png" />, WHEEL_DOWN, <span class="dig">5</span>)
+wheel(<img src="1542448611623.png" />, WHEEL_DOWN, <span class="dig">5</span>)
 
-bonus = Pattern(<img src="bonus.png" />).targetOffset(<span class="dig">141</span>,-<span class="dig">7</span>)
+bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.60</span>).targetOffset(<span class="dig">141</span>,-<span class="dig">7</span>)
 
 <span class="kw">while</span> count:
     <span class="kw">if</span> exists(bonus):
         <span class="skw">click</span>(bonus)
 
-    count = count - <span class="dig">1</span>
+    count = count - <span class="dig">1</span><h3>ERROR: EOF in multi-line statement</h3>
+</font></pre>
 </pre>
 </body>
 </html>

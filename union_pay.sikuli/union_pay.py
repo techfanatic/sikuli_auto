@@ -1,7 +1,10 @@
-click("1540974230387.png")
+click("1542449189644.png")
 
 sleep(5)
 
+if exists("1542694667395.png"):
+    click("1542694678085.png")
+    
 sign = "sign.png"
 
 sleep(5)
