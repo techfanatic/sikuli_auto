@@ -1,4 +1,4 @@
-click("1543981552556.png")
+click("1544416756914.png")
 
 sleep(10)
 
@@ -22,7 +22,7 @@ sleep(8)
 
 count = 400
 
-butt = 
+butt = "butt.png"
 
 if exists(butt):
     click(butt)
@@ -31,7 +31,7 @@ if exists(butt):
     sleep(5)
     print("after click the button")
 
-    if exists("1544072130030.png":
+    if exists("1544072130030.png"):
         click("1544072130030.png")
 
         sleep(2)
