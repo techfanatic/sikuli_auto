@@ -70,43 +70,47 @@
 <h2>tab_zmd.sikuli</h2> <a href="tab_zmd.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="cmt">#test</span>
-<span class="skw">click</span>(<img src="1540790334473.png" />)
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+<span class="kw">def</span> check_click(img_file, time):
+    <span class="kw">if</span> <span class="kw">not</span> exists(img_file):
+        <span class="kw">print</span>(<span class="str">"%s not displayed"</span> % img_file)
+    <span class="kw">if</span> exists(img_file):
+        <span class="skw">click</span>(img_file)
+        <span class="skw">sleep</span>(time)
+<span class="kw">def</span> wait_click(img_file, time):
+    <span class="skw">wait</span>(img_file)
+    <span class="skw">click</span>(img_file)
+    <span class="skw">sleep</span>(time)
 
-<span class="kw">if</span> exists(Pattern(<img src="1536814622496.png" />).similar(<span class="dig">0.85</span>)):
-    <span class="skw">click</span>(Pattern(<img src="1536814622496.png" />).similar(<span class="dig">0.85</span>))
-<span class="skw">click</span>(Pattern(<img src="1533613772075.png" />).similar(<span class="dig">0.83</span>))
-<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="kw">def</span> click_sleep(img_file, time):
+    <span class="skw">click</span>(img_file)
+    <span class="skw">sleep</span>(time)
 
-splash = Pattern(<img src="1535689420965.png" />).exact()
-<span class="kw">if</span> exists(splash):
-    <span class="skw">click</span>(splash)
+check_click(<img src="1540790334473.png" />, <span class="dig">5</span>)
+
+check_click(Pattern(<img src="1536814622496.png" />).similar(<span class="dig">0.85</span>), <span class="dig">2</span>)
+check_click(Pattern(<img src="1533613772075.png" />).similar(<span class="dig">0.83</span>), <span class="dig">2</span>)
+
 
 sign = <img src="sign.png" />
 
 <span class="kw">if</span> exists(sign):
     <span class="kw">print</span>(<span class="str">"find sign"</span>)
-    <span class="skw">click</span>(sign)
-    <span class="skw">sleep</span>(<span class="dig">5</span>)
-    <span class="kw">if</span> exists(<img src="1541135091392.png" />):
-        <span class="skw">click</span>(<img src="1541135091392.png" />)
-    <span class="kw">if</span> exists(<img src="1542449267862.png" />):
-        <span class="skw">click</span>(<img src="1542449280018.png" />)
-    <span class="skw">sleep</span>(<span class="dig">10</span>)
+    click_sleep(sign, <span class="dig">5</span>)
+    check_click(<img src="1541135091392.png" />, <span class="dig">1</span>)
+    check_click(<img src="1542449267862.png" />, <span class="dig">10</span>)
 
-    <span class="kw">if</span> exists(Pattern(<img src="1536294368703.png" />).similar(<span class="dig">0.94</span>)):
-        <span class="skw">click</span>(<img src="1536294395821.png" />)
-        <span class="skw">sleep</span>(<span class="dig">2</span>)
-        <span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.94</span>))
+
+    check_click(Pattern(<img src="1536294368703.png" />).similar(<span class="dig">0.94</span>), <span class="dig">2</span>)
+
+    check_click(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.94</span>), <span class="dig">1</span>)
 
     <span class="cmt">#sleep(5)</span>
 
     <span class="cmt">#click("1533706172680.png")</span>
 
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="cmt">#click("1540791155024.png")</span>
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+
 
 wheel(<img src="1540790610381.png" />, WHEEL_DOWN, <span class="dig">8</span>)
 
@@ -116,15 +120,12 @@ unfinish = Pattern(<img src="1533615372888.png" />).similar(<span class="dig">0.
 bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.86</span>)
 <span class="kw">for</span> i <span class="kw">in</span> findAll(unfinish):
 
-    <span class="skw">click</span>(i)
-    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    click_sleep(i, <span class="dig">2</span>)
 
-    <span class="kw">if</span> exists(Pattern(<img src="1541477041150.png" />).similar(<span class="dig">0.84</span>)):
-        <span class="skw">click</span>(Pattern(<img src="1541477041150.png" />).similar(<span class="dig">0.83</span>))
+    check_click(Pattern(<img src="1541477041150.png" />).similar(<span class="dig">0.84</span>), <span class="dig">1</span>)
 
-    <span class="kw">if</span> exists(Pattern(<img src="1541477156477.png" />).similar(<span class="dig">0.90</span>)):
-        <span class="skw">click</span>(Pattern(<img src="1541477156477.png" />).similar(<span class="dig">0.90</span>))
-    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    check_click(Pattern(<img src="1541477156477.png" />).similar(<span class="dig">0.82</span>), <span class="dig">2</span>)
+
 
     <span class="kw">if</span> exists(<img src="1544072549930.png" />):
         <span class="skw">click</span>(<img src="1533613906973.png" />)
@@ -132,71 +133,40 @@ bonus = Pattern(<img src="bonus.png" />).similar(<span class="dig">0.86</span>)
         <span class="skw">click</span>(<img src="1533613906973.png" />)
     <span class="kw">if</span> exists(Pattern(<img src="1543403911200.png" />).similar(<span class="dig">0.83</span>)):
         <span class="skw">click</span>(<img src="1543403924500.png" />)
-    <span class="kw">if</span> exists(Pattern(<img src="1537159170533.png" />).similar(<span class="dig">0.75</span>)):
-        <span class="skw">click</span>(Pattern(<img src="1537159202343.png" />).similar(<span class="dig">0.84</span>).targetOffset(<span class="dig">78</span>,-<span class="dig">70</span>))
-    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    check_click(Pattern(<img src="1537159170533.png" />).similar(<span class="dig">0.75</span>), <span class="dig">2</span>)
 
 
-<span class="kw">for</span> i <span class="kw">in</span> findAll(bonus):
-    <span class="kw">print</span>(<span class="str">"find bonus"</span>)
-    <span class="skw">click</span>(bonus)
-    <span class="skw">sleep</span>(<span class="dig">2</span>)
-    <span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.94</span>))
-    <span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="kw">if</span> exists(bonus):
+    <span class="kw">for</span> i <span class="kw">in</span> findAll(bonus):
+        <span class="kw">print</span>(<span class="str">"find bonus"</span>)
+        click_sleep(i, <span class="dig">2</span>)
+        click_sleep(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.94</span>), <span class="dig">2</span>)
 
-<span class="skw">click</span>(<img src="1544072801586.png" />)
+click_sleep(<img src="1544072801586.png" />, <span class="dig">1</span>)
 
-<span class="skw">sleep</span>(<span class="dig">1</span>)
+click_sleep(Pattern(<img src="1536727093763.png" />).similar(<span class="dig">0.81</span>), <span class="dig">5</span>)
 
-<span class="skw">click</span>(Pattern(<img src="1536727093763.png" />).similar(<span class="dig">0.81</span>))
+wait_click(<img src="1536727151029.png" />, <span class="dig">5</span>)
 
-<span class="skw">sleep</span>(<span class="dig">5</span>)
 
-<span class="skw">click</span>(<img src="1536727151029.png" />)
+click_sleep(<img src="1536727189343.png" />, <span class="dig">5</span>)
 
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+click_sleep(<img src="1544072859975.png" />, <span class="dig">2</span>)
 
-<span class="skw">click</span>(<img src="1536727189343.png" />)
+click_sleep(<img src="1533615650190.png" />, <span class="dig">10</span>)
+click_sleep(<img src="1541136703643.png" />, <span class="dig">3</span>)
+click_sleep(Pattern(<img src="1533615718156.png" />).similar(<span class="dig">0.72</span>), <span class="dig">20</span>)
+wait_click(<img src="1535097385646.png" />, <span class="dig">5</span>)
 
-<span class="skw">sleep</span>(<span class="dig">5</span>)
-
-<span class="skw">click</span>(<img src="1544072859975.png" />)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-
-<span class="skw">click</span>(<img src="1533615650190.png" />)
-<span class="skw">sleep</span>(<span class="dig">10</span>)
-<span class="skw">click</span>(<img src="1541136703643.png" />)
-<span class="skw">sleep</span>(<span class="dig">3</span>)
-<span class="skw">click</span>(Pattern(<img src="1533615718156.png" />).similar(<span class="dig">0.72</span>))
-
-<span class="skw">sleep</span>(<span class="dig">20</span>)
-<span class="skw">wait</span>(<img src="1535097385646.png" />)
-<span class="skw">click</span>(<img src="1535097385646.png" />)
-
-<span class="skw">sleep</span>(<span class="dig">5</span>)
-
-<span class="skw">click</span>(<img src="1535097417157.png" />)
-<span class="skw">sleep</span>(<span class="dig">5</span>)
-<span class="skw">click</span>(<img src="1535097438222.png" />)
-
-<span class="skw">sleep</span>(<span class="dig">10</span>)
-
-<span class="skw">click</span>(<img src="1533613906973.png" />)
-
-<span class="skw">sleep</span>(<span class="dig">10</span>)
+click_sleep(<img src="1535097417157.png" />, <span class="dig">5</span>)
+click_sleep(<img src="1535097438222.png" />, <span class="dig">10</span>)
+click_sleep(<img src="1533613906973.png" />, <span class="dig">10</span>)
 
 <span class="skw">click</span>(bonus)
 
-<span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.96</span>))
+click_sleep(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.96</span>), <span class="dig">10</span>)
 
-
-
-<span class="skw">sleep</span>(<span class="dig">10</span>)
-
-<span class="skw">click</span>(<img src="1536727189343.png" />)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
+click_sleep(<img src="1536727189343.png" />, <span class="dig">2</span>)
 <span class="skw">click</span>(bonus)
 
 <span class="skw">click</span>(Pattern(<img src="1533615527529.png" />).similar(<span class="dig">0.96</span>))
