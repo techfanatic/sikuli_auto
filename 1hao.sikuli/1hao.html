@@ -70,21 +70,22 @@
 <h2>1hao.sikuli</h2> <a href="1hao.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="skw">click</span>(<img src="1543981441273.png" />)
+<span class="kw">import</span> helper
 
-<span class="skw">sleep</span>(<span class="dig">10</span>)
+reg = <img src="reg.png" />
+click_sleep(<img src="1543981441273.png" />, <span class="dig">10</span>)
 
-<span class="skw">click</span>(<img src="1542695423859.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">10</span>)
+click_sleep(<img src="1542695423859.png" />, <span class="dig">10</span>)
 
-<span class="skw">click</span>(<img src="1542695442017.png" />)
+click_sleep(<img src="1542695442017.png" />, <span class="dig">18</span>)
 
-<span class="skw">sleep</span>(<span class="dig">18</span>)
 
-<span class="skw">click</span>(<img src="1542695468118.png" />)
+click_sleep(<img src="1542695468118.png" />, <span class="dig">5</span>)
 
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+<span class="kw">if</span> exists(login2):
+    reg.getScreen().<span class="skw">capture</span>(reg).getFile(dir, <span class="str">"captcha1"</span>)
+    <span class="kw">print</span> <span class="str">"oops"</span>
 </pre>
 </body>
 </html>

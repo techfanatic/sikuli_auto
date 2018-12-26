@@ -18,7 +18,7 @@ if exists("1540791906070.png"):
 sleep(3)
 bonus="1541134556132.png"
 click(bonus)
-sleep(8)
+sleep(20)
 
 count = 400
 
