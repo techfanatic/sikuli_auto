@@ -61,14 +61,15 @@ for i in findAll(unfinish):
 if exists(bonus):
     for i in findAll(bonus):
         print("find bonus")
-        click_sleep(i, 2)
+        click_sleep(i, 5)
         click_sleep(Pattern("1533615527529.png").similar(0.94), 2)
 
 click_sleep(Pattern("1545711231694.png").similar(0.83), 1)
 
-click_sleep(Pattern("1536727093763.png").similar(0.81), 5)
+click_sleep(Pattern("1536727093763.png").similar(0.81), 15)
 
-wait_click(Pattern("1536727151029.png").similar(0.89), 5)
+click_sleep(Pattern("1536727151029.png").similar(0.89), 5)
+
 
 
 click_sleep("1536727189343.png", 5)
@@ -77,7 +78,7 @@ click_sleep(Pattern("1545621409523.png").similar(0.81), 2)
 
 click_sleep("1533615650190.png", 10)
 click_sleep("1541136703643.png", 3)
-click_sleep(Pattern("1533615718156.png").similar(0.72), 20)
+click_sleep(Pattern("1533615718156.png").similar(0.72), 25)
 wait_click("1535097385646.png", 5)
 
 click_sleep("1535097417157.png", 5)

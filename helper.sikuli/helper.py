@@ -2,6 +2,7 @@ def check_click(img_file, time):
     if not exists(img_file):
         print("%s not displayed" % img_file)
     if exists(img_file):
+        print("%s displayed" % img_file)
         click(img_file)
         sleep(time)
 def wait_click(img_file, time):

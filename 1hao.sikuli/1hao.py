@@ -1,7 +1,7 @@
 import helper
 
 reg = "reg.png"
-click_sleep("1543981441273.png", 10)
+click_sleep("1543981441273.png", 20)
 
 
 click_sleep("1542695423859.png", 10)

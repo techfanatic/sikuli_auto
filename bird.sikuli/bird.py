@@ -1,6 +1,6 @@
 click("1545626530834.png")
 
-sleep(3)
+sleep(10)
 
 click("1536727640132.png")
 

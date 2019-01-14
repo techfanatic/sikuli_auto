@@ -52,14 +52,14 @@ click_sleep("1542450029900.png", 5)
 click_sleep("1542450029900.png", 10)
 
 
-click_sleep("1542449841645.png", 10)
+check_click("1542449841645.png", 10)
 click(Pattern("1542450042988.png").similar(0.83))
 
 click("1542450080763.png")
 
 
 lable="1543404518074-1.png"
-count = 3
+count = 4
 while exists(lable) and count:
     click_sleep(lable, 10)
     check_click("1545713329760-1.png", 2)

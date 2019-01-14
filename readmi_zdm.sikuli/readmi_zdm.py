@@ -1,6 +1,6 @@
 import helper
     
-check_click("1545788771905.png", 2)
+check_click("1546841624109.png", 2)
 
 check_click(Pattern("1536814622496.png").similar(0.85), 1)
 check_click("1545788813448.png", 1)
@@ -17,9 +17,10 @@ if exists(sign):
       
    
     check_click(Pattern("1536294368703.png").similar(0.83), 1)
-    wheel("1545789302757.png", WHEEL_DOWN, 8)
+    wheel("1545789302757.png", WHEEL_DOWN, 5)
+    sleep(3)
 
-unfinish = Pattern("1545788965666.png").similar(0.96)
+unfinish = Pattern("1545788965666.png").similar(0.93)
 bonus = Pattern("bonus.png").similar(0.86)
 back = "1545789323653.png"
 todo = Pattern("1545789465658.png").similar(0.82)
@@ -44,12 +45,12 @@ if exists(bonus):
 click_sleep("1545791089459.png", 2)
 
 click_sleep(todo, 3)
-click_sleep("1541136703643.png", 3)
-click_sleep(Pattern("1533615718156.png").similar(0.72), 5)
-wait_click("1535097385646.png", 2)
+click_sleep("1546503662084.png", 3)
+click_sleep("1546503675157.png", 5)
+wait_click("1547016233492.png", 2)
 
-click_sleep("1535097417157.png", 2)
-click_sleep("1535097438222.png", 2)
+click_sleep("1547016245564.png", 2)
+click_sleep("1547016258848.png", 2)
 click_sleep(back, 2)
 
 click_sleep("1545789601623.png", 1)
